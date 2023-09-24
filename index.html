@@ -1,0 +1,799 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+     
+        .navbar {
+            display: block;
+            box-sizing: border-box;
+           padding: 77px;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+
+        }
+        li{
+          padding: 18px;
+        }    
+        /* body {
+            background-color: var(--white-color);
+            font-family: var(--body-font-family);
+        }
+    
+        body {
+            margin: 0;
+            font-family: var(--bs-body-font-family);
+            font-size: var(--bs-body-font-size);
+            font-weight: var(--bs-body-font-weight);
+            line-height: var(--bs-body-line-height);
+            color: var(--bs-body-color);
+            text-align: var(--bs-body-text-align);
+            background-color: var(--bs-body-bg);
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        } */
+        .custom-btn-1 {
+        border-radius: 22px; /* Makes the button circular */
+        width: 190px;
+        background-color: rgb(144, 87, 210); /* Sets the background color to purple */
+        color: white; /* Sets the text color to white */
+        padding: 10px 20px; /* Adjust padding as needed */
+        transition: background-color 0.3s ease; /* Add a smooth transition effect */
+        position: relative;
+        left: 78px;
+    }
+    .custom-btn2{
+        border-radius: 550px;
+    }
+    .custom-btn-1:hover {
+       
+        color: white;
+    }
+    .content{
+        background-image: "https://www.internee.pk/images/close-up-young-business-team-working.jpg";
+    }
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(144, 238, 144, 0.6); /* Light green color with transparency */
+    z-index: 1; /* Place the overlay above the background image */
+}
+.imgbg{
+    background-image: url('https://www.internee.pk/images/close-up-young-business-team-working.jpg'); 
+    background-size: cover;
+    position: relative;
+        height: 90vh; /* Set the height to half of the viewport height (adjust as needed) */
+        background-image: url('https://www.internee.pk/images/close-up-young-business-team-working.jpg');
+        background-size: cover;
+        background-position: center top;
+        margin-bottom: 70px; /* Add margin to the bottom to create space */
+}
+
+    .imgbg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(38, 102, 38, 0.6); /* Light green color with transparency */
+        z-index: 1; /* Place the overlay above the background image */
+    }
+
+    .hero-section-text {
+        position: relative; /* Ensure text and button are on top of the overlay */
+        z-index: 2; /* Place text and button above the overlay */
+        top: 121px;
+    }
+    .hero-title
+    {
+        color: white;
+        font-weight: bold;
+    } 
+
+    .text-boxinfo {
+    position: relative;
+    background-color: #6e29d0; /* Ink blue background color */
+    color: white; /* Text color */
+    padding: 80px; /* Adjust padding as needed */
+    width: 645px;
+    right: 77px;
+}
+.Welcommsg{
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+}
+.txt{
+    text-align: center;
+}
+.custom-text-block{
+    background-color: #a073df;
+    text-align: center;
+    padding: 74px;
+}
+
+/* Styles for the "Get to know us" button */
+.custom-btn {
+    background-color: #a073df; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: 2px solid #eeeeee; /* Border style */
+    border-radius: 19px; /* Border radius */
+    text-decoration: none; /* Remove underlines from links */
+    font-weight: bold; /* Text font weight */
+}
+
+.custom-btn:hover {
+    background-color: #fff; /* Change background color on hover */
+    color: #30e792; /* Change text color on hover */
+}
+
+.custom-link {
+    color: #30e792; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+    position: relative;
+    left: 12px;
+}
+
+.custom-link:hover {
+    color: #fff; /* Change link text color on hover */
+}
+
+.about-image-wrap2 {
+    background-color: green;
+    position: relative;
+    overflow: hidden;
+   border-top-left-radius: 19px;
+   
+}
+.about-image-wrap {
+    background-color: green;
+    position: relative;
+    overflow: hidden;
+   border-top-right-radius: 19px;
+  height: 99%;
+}
+.about-image1 {
+    height: 440px;
+}
+.about-image2 {
+    height: 400px;
+width: 600px;    
+}
+
+.about-section{
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-bottom: 70px;
+}
+
+/* Styling for the round green buttons */
+.categories-block a {
+    border: 9px solid #a073df ;
+    display: block;
+    width: 100px;
+    height: 190px;
+    background-color: #198754; /* Green background color */
+    border-radius: 50%; /* Makes the buttons more round */
+    text-align: center;
+    padding: 10px;
+    color: #fff; /* Text color */
+    text-decoration: none;
+    transition: border-color 0.3s ease; /* Transition for border color */
+    position: relative;
+}
+
+/* Add a shining border on hover */
+.categories-block a:hover {
+    border: 9px solid rgb(210, 228, 244); /* Purple border color */
+}
+
+/* Center the icon vertically */
+.categories-icon {
+    margin-top: 25px; /* Adjust as needed */
+}
+
+/* Center the title vertically */
+.categories-block-title {
+    margin-top: 5px; /* Adjust as needed */
+}
+
+/* Style for the number inside the button */
+.categories-block-number {
+    position: absolute;
+    top: 10px; /* Position from the top */
+    left: 10px; /* Position from the left */
+    font-size: 18px;
+    font-weight: bold;
+}
+.row {
+    margin-bottom: 70px;
+}
+.container5{
+    position: relative;
+    right: 244px;
+}
+.about-image-wrap3{
+    position: relative;
+    height: 100%;
+}
+.op{
+    padding: 22px;
+}
+.text-white3{
+    color: #ffffff;
+}
+.custom-text-box2{
+    position: relative;
+    background-color: #2aa140;
+    text-align: center;
+    padding: 84px;
+    border-top-left-radius: 39px;
+}.container4{
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.img6{
+    border-top-right-radius: 39px;
+    height: 520px
+}
+.job-image{
+    border-radius: 12px;
+}
+.custom-btn4{
+    background-color: #6e29d0;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+}
+.box2{
+    position: relative;
+    left: 369px;
+    bottom: 363px;
+    border-radius: 20px;
+}
+.box3{
+    position: relative;
+    left: 740px;
+    bottom: 726px;
+    border-radius: 20px;
+}
+.brows{
+    position: relative;
+    top: 64px;
+    left: 120px;
+
+}
+.custom-btn6{
+    border-radius: 40px;
+    background-color: #a073df;
+    padding: 30px;
+    color: #fff;
+    width: 75%;
+}
+
+.row5{
+    position: relative;
+    right: 220px;
+    bottom: 500px;
+    background-color: aliceblue;
+    width: 1518px;
+    padding: 100px;
+ align-items: center;
+}
+
+.imgbg4{
+    background-image: url('https://www.internee.pk/images/close-up-young-business-team-working.jpg'); 
+    background-size: cover;
+    position: relative;
+    height: 90vh; /* Set the height to half of the viewport height (adjust as needed) */
+    background-size: cover;
+    background-position: center top;
+    margin-bottom: 70px; /* Add margin to the bottom to create space */
+    background-image: url('https://www.internee.pk/images/close-up-young-business-team-working.jpg'); 
+    background-size: cover;
+        width:137%;
+        background-image: url('https://www.internee.pk/images/close-up-young-business-team-working.jpg');
+        background-size: cover;
+        background-position: center top;
+        margin-bottom: 70px; /* Add margin to the bottom to create space */
+        bottom: 500px;
+        left: -210px;
+}
+.imgbg4::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(38, 102, 38, 0.6); /* Light green color with transparency */
+        z-index: 1; /* Place the overlay above the background image */
+    }
+    .site-footer{
+        position: relative;
+        bottom: 500px;
+    }
+    .footer-menu-item{
+       list-style: none;
+    }
+    .custom-form{
+        position: relative;
+        left: 768px;
+        bottom: 200px;
+        border: 62px solid aliceblue;
+    }
+    .green-background-line{
+        position: relative;
+        justify-content: center;
+        background-color: #2aa140;
+        width: 137%;
+        right: 204px;
+        bottom: 280px;
+        color: #ffffff;
+    }
+
+    .sponsored{
+        position: relative;
+        top: -81px;
+        left:856px;
+    }
+    .social-icons-list{
+        display: flex;
+    list-style: none;
+    position:relative ;
+    right: 62px;
+}
+    .footer-menu1{
+        position: relative;
+        right: 52px;
+    }
+    .footer-menu2{
+        position: relative;
+        right: 192px;
+    }
+    .site-footer-title2{
+        position: relative;
+        right: 137px;
+    }
+    .nav-link
+    {
+        color: black;
+    }
+    .nav-link:hover {
+        color: rgb(162, 46, 230);
+    }
+    .im1{
+        height: 32px;
+        position: relative;
+    }
+    .link{
+        height: 32px;
+        position: relative;
+    }
+</style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="https://www.internee.pk/">
+                <img style="margin-right: 0px;" src="/1st-logo.jpg" class="img-fluid logo-image">
+                <div class="d-flex flex-column">
+                    <strong style="color: #43a351; font-weight: bolder; font-size: larger;" class="logo-text">Internee<span style="color: black;">.pk</span></strong>
+                    <small style="font-size:10.5px;" class="logo-slogan">Virtual Internship PLATFORM</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav align-items-center ms-lg-5">
+                    <li class="nav-item1">
+                        <a  class="nav-link active" href="https://www.internee.pk/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.internee.pk/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.internee.pk/job-listings.html">Internships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.internee.pk/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.internee.pk/lms.html">LMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.internee.pk/soon.html">Job Portal</a>
+                    </li>
+                    <li class="nav-item ms-lg-auto">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-btn-1 btn" href="http://internee-pk.great-site.net/">Internee Portal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+     <!-- ............................................................................................... -->
+    <div class="content">
+        <section class="imgbg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                        <div class="hero-section-text mt-5">
+                            <h6 class="text-white">Are you looking for your dream Internship ?</h6>
+                            <h1 class="hero-title">Join <br> Internee.pk now..!</h1>
+                            <p style="color: white;">Pakistan's Virtual Internship Platform Powered By <a href="https://techviochats.com/" style="font-weight: bold; color: rgb(208, 255, 226);">TechvioChats</a></p>
+                            <a href="https://www.internee.pk/job-listings.html" style="color: white; border: 2px solid white;" id="styling" class="custom-btn2 custom-border-btn btn styling">Browse Internships</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ............................................................................................... -->
+        <section class="about-section">
+            <div class="container-img1">
+                <div class="row">
+                    <div class="col-lg-3 col-12">
+                        <div class="about-image-wrap2 custom-border-radius-start">
+                            <img src="https://www.internee.pk/images/founder.jpg" class="about-image1 custom-border-radius-start img-fluid" alt="">
+                            <div class="about-info">
+                                <h4 class="text-white mb-0 me-2">Hammad Sheikh</h4>
+                                <p class="text-white mb-0">Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-lg-6 col-12">
+                        <div class="custom-text-block">
+                            <h2 class="text-white mb-2">Welcome to Internee.pk</h2>
+                            <p class="text-white">Our internship program is designed to give students the opportunity to work on meaningful projects and tasks, while also receiving mentorship and guidance from experienced professionals in the field. Our goal is to help interns develop the skills and knowledge they need to succeed in their careers, while also building a strong network of talented individuals who may become valuable members of our team in the future. If you're looking for a challenging and rewarding internship experience, we invite you to explore our program and <a href="/job-listings.html" style="color: #30e792; font-weight: bolder;" target="_parent">Apply Today</a></p>
+        
+                            <div class="custom-border-btn-wrap d-flex align-items-center mt-5">
+                                <a href="https://www.internee.pk/about.html" class="custom-btn custom-border-btn btn me-4">Get to know us</a>
+                                <a href="https://www.internee.pk/job-listings.html" class="custom-link smoothscroll">Explore Internships</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-12">
+                        <div class="about-image-wrap custom-border-radius-start">
+                            <img src="  https://www.internee.pk/images/rayyan.jpg" class="about-image2 custom-border-radius-start img-fluid" alt="">
+                            <div class="about-info">
+                                <h4 class="text-white mb-0 me-2">Rayyan Zain</h4>
+                                <p class="text-white mb-0">CMO</p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+     <!-- ---------------------------------------------------------------------------------------------------------------    -->
+     <div class="container">
+        <h1 style="text-align: center;">Browse by categories</h1>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="categories-block">
+                    <a href="https://www.internee.pk/web-design.html" class="d-flex flex-column justify-content-center align-items-center h-100">
+                        <i class="categories-icon bi-window"></i>
+                        <small class="categories-block-title">Website Designing</small>
+                        <div class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                            <span class="categories-block-number-text">1</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="categories-block">
+                    <a href="https://www.internee.pk/mobile-development.html" class="d-flex flex-column justify-content-center align-items-center h-100">
+                        <i class="categories-icon bi-window"></i>
+                        <small class="categories-block-title">Mobile App Develpment</small>
+                        <div class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                            <span class="categories-block-number-text">2</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="categories-block">
+                    <a href="https://www.internee.pk/graphic.html" class="d-flex flex-column justify-content-center align-items-center h-100">
+                        <i class="categories-icon bi-window"></i>
+                        <small class="categories-block-title">Graphic Designing</small>
+                        <div class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                            <span class="categories-block-number-text">3</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="categories-block">
+                    <a href="https://www.internee.pk/web-development.html" class="d-flex flex-column justify-content-center align-items-center h-100">
+                        <i class="categories-icon bi-window"></i>
+                        <small class="categories-block-title">Web Development</small>
+                        <div class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                            <span class="categories-block-number-text">4</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="categories-block">
+                    <a href="https://www.internee.pk/chatbot.html" class="d-flex flex-column justify-content-center align-items-center h-100">
+                        <i class="categories-icon bi-window"></i>
+                        <small class="categories-block-title">CRM and Chatbot</small>
+                        <div class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                            <span class="categories-block-number-text">5</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container4">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="custom-text-box2">
+                        <h2 class="text-white mb-3">Launching tech careers with internships, exposure, and networking.</h2>
+                        <p class="text-white3">Internee.pk kickstarts student's tech careers with first internships, providing industry exposure, practical skills, and networking opportunities, paving the way for their success in the tech industry.
+                            <br><br>
+                           <br> Registered users
+                            <span class="op">Opening Internships</span>
+                            </p>
+                    </div>
+                </div>
+                <div class="aaa col-lg-6 col-12">
+                    <img src="https://www.internee.pk/images/people-working-as-team-company.jpg" alt="Image" class="img6">
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------- -->
+        <section class="job-section recent-jobs-section section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+        
+                    <div class="col-lg-6 col-12 mb-4">
+                        <h1>Recent Internships</h1>
+                        <p><strong>Internships come every two months</strong> Grab your internships in your
+                            favorite domain to boost yourself in the field of Computer technology</p>
+                    </div>
+                </div>
+                  <!-- Front End Card -->
+                  <div class="col-lg-4 col-md-6 col-12">
+                    <div class="job-thumb job-thumb-box">
+                        <div class="job-image-box-wrap">
+                            <a href="/web-design.html">
+                                <img src="https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/07/insert-image-html.jpg" class="job-image img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-title" style="font-weight: bold;">
+                                Frontend Development
+                            </h3>
+    
+                            <div class="d-flex align-items-center">
+                                <p class="job-location">
+                                    <i class="custom-icon bi-geo-alt me-1"></i>
+                                    Remote
+                                </p>
+    
+                                <p class="job-date">
+                                    <i class="custom-icon bi-clock me-1"></i>
+                                    1 Month
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center border-top pt-3">
+                                <a href="https://www.internee.pk/web-design.html" class="custom-btn4 btn ms-auto">Apply now</a>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="box2">
+                        <div class="job-image-box-wrap">
+                            <a href="/web-design.html">
+                                <img src="https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/07/insert-image-html.jpg" class="job-image img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-title" style="font-weight: bold;">
+                                Backend Development
+                            </h3>
+    
+                            <div class="d-flex align-items-center">
+                                <p class="job-location">
+                                    <i class="custom-icon bi-geo-alt me-1"></i>
+                                    Remote
+                                </p>
+    
+                                <p class="job-date">
+                                    <i class="custom-icon bi-clock me-1"></i>
+                                    1 Month
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center border-top pt-3">
+                                <a href="https://www.internee.pk/web-design.html" class="custom-btn4 btn ms-auto">Apply now</a>
+                            </div> 
+                        </div>
+                        
+                    </div>
+
+                    <div class="box3">
+                        <div class="job-image-box-wrap">
+                            <a href="/web-design.html">
+                                <img src="https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/07/insert-image-html.jpg" class="job-image img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-title" style="font-weight: bold;">
+                                ChatBot Development
+                            </h3>
+    
+                            <div class="d-flex align-items-center">
+                                <p class="job-location">
+                                    <i class="custom-icon bi-geo-alt me-1"></i>
+                                    Remote
+                                </p>
+    
+                                <p class="job-date">
+                                    <i class="custom-icon bi-clock me-1"></i>
+                                    1 Month
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center border-top pt-3">
+                                <a href="https://www.internee.pk/web-design.html" class="custom-btn4 btn ms-auto">Apply now</a>
+                            </div> 
+
+                            <div class="brows">
+                                <a href="https://www.internee.pk/job-listings.html" class="custom-btn6 btn ms-lg-auto">Browse Internship</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aliceblue-section section-padding">
+            <div class="container">
+                <div class="row5">
+        
+                    <div class="col-lg-12 col-12">
+                        <h2 class="text-center mb-5" style="font-weight: bolder;">Happy Internee Reviews</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="imgbg4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                        <div class="hero-section-text mt-5">
+                            
+                            <h1 class="hero-title">Internships after every two months</h1>
+                            <p style="color: white;"> Introducing Internee.pk, the ultimate platform designed to turbocharge the IT sector in Pakistan! We recognize the immense potential of talented individuals in the country and aim to bridge the gap between them and the thriving IT industry. Internee.pk offers a comprehensive range of virtual internship opportunities exclusively in the IT field.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ---------------------------------------   -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mb-3">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="/1st-logo.jpg" class="img-fluid logo-image" alt="Logo">
+                            <div class="d-flex flex-column">
+                                <strong class="logo-text">Internee<span style="color: black;">.pk</span></strong>
+                                <small class="logo-slogan">Virtual Internship PLATFORM</small>
+                            </div>
+                        </div>
+                        <p class="mb-2">
+                            <i class="custom-icon bi-globe me-1"></i>
+                            <a href="https://www.internee.pk/" class="site-footer-link">
+                                www.internee.pk
+                            </a>
+                        </p>
+                        <p class="mb-2">
+                            <i class="custom-icon bi-telephone me-1"></i>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B923453191638&amp;text&amp;app_absent=0" class="site-footer-link">
+                                +92 345 3191638 <br> +92 349 2861021
+                            </a>
+                        </p>
+                        <p>
+                            <i class="custom-icon bi-envelope me-1"></i>
+                            <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                                info@internee.pk
+                            </a>
+                        </p>
+                        <form class="custom-form" action="https://api.whatsapp.com/send/?phone=%2B923453191638&amp;text&amp;app_absent=0" method="get" role="form">
+                            <h6 class="site-footer-title">Get Updates About Internships</h6>
+                            <div class="input-group">
+                                <form action=""></form>
+                                <input type="text" name="search-query" id="search-query" class="form-control" placeholder="Search..." required="">
+                                <button type="submit" class="form-control"><i class="bi-search">   </i>Search</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-6 ms-lg-auto">
+                        <h6 class="site-footer-title">Company</h6>
+                        <ul class="footer-menu1">
+                            <li class="footer-menu-item"><a href="https://www.internee.pk/index.html" class="footer-menu-link">Home</a></li>
+                            <li class="footer-menu-item"><a href="https://www.internee.pk/about.html" class="footer-menu-link">About</a></li>
+                            <li class="footer-menu-item"><a href="https://www.internee.pk/job-listings.html" class="footer-menu-link">Internships</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-6">
+                        <h6 class="site-footer-title2">Resources</h6>
+                        <ul class="footer-menu2">
+                            <li class="footer-menu-item"><a href="https://www.internee.pk/policy.html" class="footer-menu-link">Discord Server</a></li>
+                            <li class="footer-menu-item"><a href="https://www.internee.pk/policy.html" class="footer-menu-link">Blog</a></li>
+                            <li class="footer-menu-item"><a href="https://www.internee.pk/policy.html" class="footer-menu-link">Podcast</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="green-background-line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-12 d-flex align-items-center">
+                            <!-- Add Discord, Facebook, LinkedIn, and Instagram logos with links here -->
+                            <ul class="social-icons-list">
+                                <li class="social-icon-item">
+                                    <a style="text-decoration: none;color: white;" href="https://www.internee.pk/policy.html" class="social-icon-link discord-icon"><i class="bi-discord"><img class="im1" src="https://www.hiveworkshop.com/media/discord-icon-small.132377/full?d=1609768507" alt=""></i></a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a style="text-decoration: none;color: white;" href="https://www.facebook.com/profile.php?id=100092672087043" class="social-icon-link facebook-icon"><i class="bi-facebook"><img class="im1" src="https://www.hiveworkshop.com/media/facebook-icon-small.136502/full" alt=""></i></a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a style="text-decoration: none;color: white;" href="https://www.linkedin.com/in/internee-pk-1ba44a276/" class="social-icon-link linkedin-icon"><i class="bi-linkedin"><img class="link" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-round-color-icon.png" alt=""></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-12 d-flex align-items-center">
+                            <p class="copyright-text">Copyright © Internee.pk 2023</p>
+                            <ul class="footer-menu d-flex">
+                                <li style="text-decoration: none;" class="footer-menu-item"><a style="color: white;" href="https://www.internee.pk/policy.html" class="footer-menu-link">Privacy Policy</a></li>
+                                <li style="text-decoration: none;" class="footer-menu-item"><a style="color: white;" href="https://www.internee.pk/policy.html" class="footer-menu-link">Terms</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-12 mt-2 mt-lg-0">
+                            <p class="sponsored">Powered By: <a class="sponsored-link" rel="sponsored" href="http://techviochats.epizy.com/?i=1" target="_blank">Techvio Chats</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+              
+    </div>
+    <!-- Bootstrap JavaScript and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
